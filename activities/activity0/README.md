@@ -19,7 +19,7 @@ The NodeJS installation was verified by running the following command in the ter
 
 This command prints the installed version of NodeJS and confirms that Node is correctly installed on the system.
 
-![version1](https://github.com/2tyger/cst391/tree/main/activities\activity0\version1.png)
+![version1](version1.png)
 
 ### NPM Version
 
@@ -43,7 +43,7 @@ It was then executed using
 
 The terminal output confirms that the JS file executed successfully:
 
-![hello1](https://github.com/2tyger/cst391/tree/main/activities\activity0\hello1.png)
+![hello1](hello1.png)
 
 ### Hello World in the Browser
 
@@ -55,11 +55,11 @@ The application was initially started using 'node app.js', the same as before.
 
 The browser was the opened to 'http://localhost:3000' and you can see that the message was displayed in the browser:
 
-![helloex1](https://github.com/2tyger/cst391/tree/main/activities\activity0\helloex1.png)
+![helloex1](helloex1.png)
 
 We can easily change the message. Here I changed it from 'Hello World!' to 'Hello Ty', and manually restarted the app. You can see that the message updated accordingly:
 
-![helloex2](https://github.com/2tyger/cst391/tree/main/activities\activity0\helloex2.png)
+![helloex2](helloex2.png)
 
 ### Hello World in the Browser using Nodemon
 
@@ -71,7 +71,7 @@ After installation, the server was restarted using
 
 You can see that every time a change is made to app.js it sends a message in the terminal and restarts the connection:
 
-![helloex3](https://github.com/2tyger/cst391/tree/main/activities\activity0\helloex3.png)
+![helloex3](helloex3.png)
 
 Below is the code for the helloex application in its final state:
 
@@ -101,7 +101,7 @@ After starting the server, the application was opened in the browser at 'http://
 
 You can see that the Browser correctly displays 'Hello World from TypeScript!' into the Browser:
 
-![MusicAPI1](https://github.com/2tyger/cst391/tree/main/activities\activity0\MusicAPI1.png)
+![MusicAPI1](MusicAPI1.png)
 
 Below is the commented TypeScript implementation that is used inside the MusicAPI project:
 
