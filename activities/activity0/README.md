@@ -19,8 +19,6 @@ The NodeJS installation was verified by running the following command in the ter
 
 This command prints the installed version of NodeJS and confirms that Node is correctly installed on the system.
 
-![version1](version1.png)
-
 ### NPM Version
 
 The NPM version was verified using the following command in the terminal.
@@ -28,6 +26,10 @@ The NPM version was verified using the following command in the terminal.
 - npm -v
 
 These commands display the installed versions of Node.js and NPM. Confirming these installations ensures the system is correctly configured to run JavaScript applications and install dependencies.
+
+You can see the response to these commands ran inside the terminal:
+
+![version1](version1.png)
 
 ### Hello World Console App
 
