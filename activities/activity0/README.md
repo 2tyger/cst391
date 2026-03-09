@@ -1,6 +1,6 @@
 # Activity 0
 
-This is activity covers NodeJS Installation, Tools, and First Applications. It can be divided into two parts:
+This activity covers NodeJS Installation, Tools, and First Applications. It can be divided into two parts:
 
 - Part 1: Tools Installation and Hello World
 - Part 2: Node.js with TypeScript
@@ -53,7 +53,7 @@ The server listens on port 3000 and responds to requests at the root URL.
 
 The application was initially started using 'node app.js', the same as before.
 
-The browser was the opened to 'http://localhost:3000' and you can see that the message was displayed in the browser:
+The browser was then opened to 'http://localhost:3000' and you can see that the message was displayed in the browser:
 
 ![helloex1](helloex1.png)
 
@@ -69,7 +69,7 @@ After installation, the server was restarted using
 
 - nodemon app.js
 
-You can see that every time a change is made to app.js it sends a message in the terminal and restarts the connection:
+You can see that every time a change is made to 'app.js' it sends a message in the terminal and restarts the connection:
 
 ![helloex3](helloex3.png)
 
