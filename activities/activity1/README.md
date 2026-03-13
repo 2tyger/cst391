@@ -90,7 +90,7 @@ npm start
 |--|--|--|--|
 |GET|http://localhost:5000/|[Postman](base1.png)||
 |GET|http://localhost:5000/albums/|[Postman](albums2.png)|
-|GET|http://localhost:5000/albums?albumId=7|[Postman](albumsid3.png)||
+|GET|http://localhost:5000/albums?albumId=7|[Postman](albumsalbumid3)||
 |GET|http://localhost:5000/albums/:search|[Postman](albumssearch4.png)|search="Test Artist"|
 |GET|http://localhost:5000/albums/search/artist/:search|[Postman](albumssearchartist5.png)|searh="Test"|
 |GET|http://localhost:5000/albums/search/description/:search|[Postman](albumssearchdesc6.png)|search="sgt"|
