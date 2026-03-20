@@ -5,6 +5,7 @@ import prayerRequestRoutes from './routes/prayerRequestRoutes';
 // create express app
 const app = express();
 
+// enable CORS for all routes
 app.use(cors());
 
 // allow json request bodies

@@ -1,7 +1,7 @@
 # Milestone 3
 
 - Author:  Ty Gilbert
-- Date:  19 March 2026
+- Date:  20 March 2026
 
 This is ***Milestone 3***. Below is an overview of my project program *Prayer Request Tracker*. This submission can be divided into multiple sections. Please review the table of contents for this submission:
 
@@ -14,7 +14,8 @@ This is ***Milestone 3***. Below is an overview of my project program *Prayer Re
 7. REST Endpoints
 8. API Example API Requests
 9. Screencast Recording
-10. Conclusion
+10. Changes Made to Proposal
+11. Conclusion
 
 ---
 
@@ -165,7 +166,7 @@ The endpoints used in this application support full CRUD operations for managing
 
 This segment covers example api requests and their json responses per the ones defined in 7: REST Endpoints
 
-- GET /requests
+- **GET /requests**
 ```json
 Response:
 [
@@ -175,7 +176,7 @@ Response:
     "description": "Please pray for a successful surgery and recovery.",
     "category": "Health",
     "dateSubmitted": "2026-03-09",
-    "isAnswered": false,
+    "isAnswered": 0,
     "priorityLevel": 3
   },
   {
@@ -184,13 +185,17 @@ Response:
     "description": "Pray for direction in my career and job opportunities.",
     "category": "Work",
     "dateSubmitted": "2026-03-09",
-    "isAnswered": true,
+    "isAnswered": 1,
     "priorityLevel": 2
   }
 ]
 ```
 
-- GET /requests/1
+Postman Screenshot:
+
+![Postman1.png](Postman1.png)
+
+- **GET /requests/1**
 
 ```json
 Response:
@@ -200,12 +205,16 @@ Response:
   "description": "Please pray for a successful surgery and a quick recovery.",
   "category": "Health",
   "dateSubmitted": "2026-03-09",
-  "isAnswered": false,
+  "isAnswered": 0,
   "priorityLevel": 3
 }
 ```
 
-- POST /requests
+Postman Screenshot:
+
+![Postman2.png](Postman2.png)
+
+- **POST /requests**
 
 ```json
 Request Body:
@@ -214,7 +223,7 @@ Request Body:
   "description": "Please pray for healing within my family.",
   "category": "Family",
   "priorityLevel": 2,
-  "isAnswered": false
+  "isAnswered": 0
 }
 
 Response:
@@ -224,7 +233,11 @@ Response:
 }
 ```
 
-- PUT /requests/1
+Postman Screenshot:
+
+![Postman3.png](Postman3.png)
+
+- **PUT /requests/1**
 
 ```json
 Request Body:
@@ -233,7 +246,7 @@ Request Body:
   "description": "Updated description...",
   "category": "Health",
   "priorityLevel": 4,
-  "isAnswered": false
+  "isAnswered": 0
 }
 
 Response:
@@ -242,7 +255,11 @@ Response:
 }
 ```
 
-- PATCH /requests/1/answer
+Postman Screenshot:
+
+![Postman4.png](Postman4.png)
+
+- **PATCH /requests/1/answer**
 
 ```json
 Response:
@@ -251,19 +268,44 @@ Response:
 }
 ```
 
-DELETE /requests/1
+Postman Screenshot:
+
+![Postman5.png](Postman5.png)
+
+- **DELETE /requests/1**
+
 ```json
 Response:
 {
   "message": "Prayer request deleted successfully"
 }
 ```
+Postman Screenshot:
+
+![Postman6.png](Postman6.png)
+
+### MySQL Workbench Table Proof:
+
+![Database1.png](Database1.png)
+
 
 ## 9: Screencast Recording
 
-In this video I will demonstrate all the api endpoints for this application using postman, and also show the corresponding database changes using MySQL Workbench:
+In this video I will demonstrate all the api endpoints for this application using postman, and also show the corresponding database changes using MySQL Workbench.
 
-SCREENCAST GOES HERE.
+Below are two ways to access the recording:
+
+- Here is a link to the YouTube screencast video: [Screencast Link](https://youtu.be/C6cwtZUPt0c)
+
+- Below is a screenshot that you can click and it will redirect you to the video on YouTube:
+
+[![Watch the video](Video1.png)](https://youtu.be/C6cwtZUPt0c)
+
+# 10: Changes Made to Proposal
+
+In accordance to this line from the Milestone 3 assignment description: *"The REST APIs can be anonymous (authentication/security is not a requirement)"* I have decided to remove the previously mentioned authentication/security aspects in relation to owner/user roles.
+
+The backend REST API is complete and no known issues are present.
 
 ## 11: Conclusion
 
