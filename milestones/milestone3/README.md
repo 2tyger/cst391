@@ -301,7 +301,7 @@ Below are two ways to access the recording:
 
 [![Watch the video](Video1.png)](https://youtu.be/C6cwtZUPt0c)
 
-# 10: Changes Made to Proposal
+## 10: Changes Made to Proposal
 
 In accordance to this line from the Milestone 3 assignment description: *"The REST APIs can be anonymous (authentication/security is not a requirement)"* I have decided to remove the previously mentioned authentication/security aspects in relation to owner/user roles.
 
