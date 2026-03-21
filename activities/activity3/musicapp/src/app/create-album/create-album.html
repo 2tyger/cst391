@@ -1,0 +1,64 @@
+<div class="container mt-4">
+  <h2>Create Album</h2>
+
+  <form (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label class="form-label">Artist</label>
+      <input
+        type="text"
+        class="form-control"
+        [(ngModel)]="album.artist"
+        name="artist"
+        required>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Album Title</label>
+      <input
+        type="text"
+        class="form-control"
+        [(ngModel)]="album.title"
+        name="title"
+        required>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Description</label>
+      <textarea
+        class="form-control"
+        [(ngModel)]="album.description"
+        name="description"></textarea>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Year</label>
+      <input
+        type="number"
+        class="form-control"
+        [(ngModel)]="album.year"
+        name="year"
+        required>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Image URL</label>
+      <input
+        type="text"
+        class="form-control"
+        [(ngModel)]="album.image"
+        name="image"
+        required>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Tracks (one per line)</label>
+      <textarea
+        class="form-control"
+        [(ngModel)]="tracksText"
+        name="tracksText"
+        rows="5"></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-success">Add New Artist</button>
+  </form>
+</div>

@@ -1,0 +1,10 @@
+.row {
+  margin-bottom: 10px;
+}
+
+.col-sm-8,
+.col-sm-4,
+.col-sm {
+  border: 1px solid black;
+  padding: 20px;
+}
