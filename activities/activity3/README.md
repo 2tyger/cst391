@@ -104,23 +104,6 @@ At this point, this application allows users to:
 
 ![About5.png](About5.png)
 
-
-```
-npm install -g @angular/cli
-```
-
-- Display the Angular Version
-
-```
-ng version
-```
-
-Screenshot:
-
-![AngularInstall1](AngularInstall1.png)
-
-- Create a new Angular project, this case we will call testapp
-
 ### Research Segment: Music Service (Fully Commented)
 
 Below is the fully commented version of the *music-service.service.ts* file. This service acts as the data layer for the application.
