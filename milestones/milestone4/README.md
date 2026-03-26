@@ -103,7 +103,7 @@ This view was implemented as the list page. It includes:
 
 Here is a screenshot of what the final page looks like as of now:
 
-![Screenshot1Home](ScreenshotHome.png)
+![Screenshot1Home](Screenshot1Home.png)
 
 ### Wireframe 2: Create Prayer Requests Page
 
