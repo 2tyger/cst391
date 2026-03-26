@@ -1,0 +1,68 @@
+<section class="page-shell">
+  <div class="section-banner">{{ heading() }}</div>
+
+  @if (errorMessage()) {
+    <p class="feedback error">{{ errorMessage() }}</p>
+  }
+
+  <form class="content-panel request-form" [formGroup]="form" (ngSubmit)="submitForm()">
+    <div class="form-row">
+      <label class="form-label" for="title">Title:</label>
+      <div class="form-field">
+        <input id="title" type="text" formControlName="title" />
+        @if (fieldInvalid('title')) {
+          <p class="field-error">title is required.</p>
+        }
+      </div>
+    </div>
+
+    <div class="form-row form-row-top">
+      <label class="form-label" for="description">Description:</label>
+      <div class="form-field">
+        <textarea id="description" rows="8" formControlName="description"></textarea>
+        @if (fieldInvalid('description')) {
+          <p class="field-error">description is required.</p>
+        }
+      </div>
+    </div>
+
+    <div class="form-row form-row-compact">
+      <label class="form-label" for="category">Category:</label>
+      <div class="form-field form-field-select">
+        <select id="category" formControlName="category">
+          @for (category of categoryOptions; track category) {
+            <option [value]="category">{{ category }}</option>
+          }
+        </select>
+      </div>
+    </div>
+
+    <div class="form-row form-row-compact">
+      <label class="form-label" for="priorityLevel">Priority Level:</label>
+      <div class="form-field form-field-select">
+        <select id="priorityLevel" formControlName="priorityLevel">
+          @for (priority of priorityOptions; track priority.value) {
+            <option [value]="priority.value">{{ priority.value }} - {{ priority.label }}</option>
+          }
+        </select>
+      </div>
+    </div>
+
+    <div class="form-row form-row-compact checkbox-row">
+      <span class="form-label">Answered:</span>
+      <label class="checkbox-label">
+        <input type="checkbox" formControlName="isAnswered" />
+        <span>mark as answered</span>
+      </label>
+    </div>
+
+    <div class="form-actions">
+      <button class="primary-button" type="submit" [disabled]="busy()">
+        {{ busy() ? 'Saving...' : submitLabel() }}
+      </button>
+      <button class="secondary-button" type="button" (click)="onCancel()" [disabled]="busy()">
+        Cancel
+      </button>
+    </div>
+  </form>
+</section>

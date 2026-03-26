@@ -1,0 +1,8 @@
+<app-prayer-request-form
+  heading="Create Prayer Request"
+  submitLabel="Submit"
+  [busy]="saving()"
+  [errorMessage]="errorMessage()"
+  (submitted)="createRequest($event)"
+  (cancelled)="goBack()"
+></app-prayer-request-form>

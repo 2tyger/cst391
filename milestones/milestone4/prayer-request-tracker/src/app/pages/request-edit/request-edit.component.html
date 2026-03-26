@@ -1,0 +1,26 @@
+@if (errorMessage() && !loading() && !request()) {
+  <section class="page-shell">
+    <div class="section-banner">Edit Prayer Request</div>
+    <p class="feedback error">{{ errorMessage() }}</p>
+    <div class="details-actions">
+      <a class="secondary-button" routerLink="/requests">Back</a>
+    </div>
+  </section>
+} @else if (loading()) {
+  <section class="page-shell">
+    <div class="section-banner">Edit Prayer Request</div>
+    <div class="content-panel">
+      <p class="feedback">Loading prayer request...</p>
+    </div>
+  </section>
+} @else {
+  <app-prayer-request-form
+    heading="Edit Prayer Request"
+    submitLabel="Update"
+    [request]="request()"
+    [busy]="saving()"
+    [errorMessage]="errorMessage()"
+    (submitted)="updateRequest($event)"
+    (cancelled)="cancelEdit()"
+  ></app-prayer-request-form>
+}
