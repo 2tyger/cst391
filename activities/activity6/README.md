@@ -5,30 +5,31 @@
 
 ## Summary
 
-Activity 6 continued the React work from the previous activity by introducing external data sources and client-side routing. In this activity, I first updated the music app so that album data could be loaded from an external JSON-backed REST service instead of being hard-coded directly into the component. After that, I created a second React app from scratch to practice routing concepts such as protected routes, redirects, and route parameters. Finally, I returned to the music app and expanded it into a multi-page application with navigation between the main page, a new album page, and a single album details page.
+Activity 6 continued the React work from the previous activity by building on the earlier hard-coded music app and then introducing external data sources and client-side routing. In this activity, I first returned to the music app and moved the album data out of hard-coded state into a local JSON file. Later, the app was connected to an external REST-style data source. I then created a second React app from scratch to practice routing concepts such as protected routes, redirects, and route parameters. Finally, I returned to the music app and expanded it into a multi-page application with navigation between the main page, a new album page, and a single album details page.
 
 ## Part 1: External Data Sources in the Music App
 
 ### Returning to the music app
 
-At this point in the activity, I returned to the music application and updated it to work with data that comes from an external source. The main goal in this section was to stop relying on hard-coded album data and instead fetch that data through an HTTP request.
+At this point in the activity, I returned to the music application and continued building on the earlier hard-coded version of the app. This section did not begin with an external REST source right away. Instead, the album data was first moved out of the React state initialization and into a local JSON file, and only later was the app connected to an external REST-style service.
 
 ### Adding an external data source
 
+- First moved the album list out of hard-coded state and into a local `albums.json` file
 - Added a `SearchForm` component so the user can type a search phrase
 - Added component state for both the album list and the current search phrase
 - Used `useEffect` so that album data loads when the component is first rendered
-- Added Axios through a reusable `dataSource.js` file to make HTTP requests
-- Connected the app to a mock REST service backed by JSON data
+- Later added Axios through a reusable `dataSource.js` file to make HTTP requests
+- Later connected the app to an external REST-style service
 - Filtered the loaded albums locally based on the search phrase entered by the user
 
-You can see in the screenshot below that the app is now able to read the user input, narrow the list of albums, and print debugging information into the browser console while the search term is being typed.
+By this stage of the section, the app had moved beyond the original hard-coded data. The progression in the guide was from hard-coded state, to a local JSON file, and then to an external REST-style source. You can see in the screenshot below that the app is able to read the user input, narrow the list of albums, and print debugging information into the browser console while the search term is being typed.
 
 ![1.png](1.png)
 
 ### Summary
 
-In this part of the activity, I updated the music app so that it could retrieve data from an external source instead of storing everything directly inside the component. The main ideas introduced here were `Axios`, which is used to make HTTP requests, `REST service`, which returns data to the frontend, `useEffect`, which runs code after rendering, and `state`, which allows the app to remember values such as the current search phrase and album list.
+In this part of the activity, I continued improving the music app by starting from the earlier hard-coded version, then moving the album data into a local JSON file, and later loading information from an external source. The main ideas introduced here were `JSON file`, which stores structured data outside the component, `Axios`, which is used to make HTTP requests, `REST service`, which returns data to the frontend, `useEffect`, which runs code after rendering, and `state`, which allows the app to remember values such as the current search phrase and album list.
 
 ## Part 2: Mini App #2 - Routing Application Demo
 
