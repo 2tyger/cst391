@@ -1,0 +1,14 @@
+.album-grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.album-grid .card {
+    margin: 10px;
+    padding: 5px;
+}
+
+.music-panel {
+    margin: 10px;
+    padding: 5px;
+}

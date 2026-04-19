@@ -1,0 +1,119 @@
+{
+  "albums": [
+    {
+      "id": "1",
+      "artistId": 0,
+      "artist": "The Beatles",
+      "title": "Yellow Submarine",
+      "description": "Yellow Submarine is the tenth studio album by English rock band the Beatles, released on 13 January 1969 in the United States and on 17 January 1969 in the United Kingdom.",
+      "year": 1969,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/TheBeatles-YellowSubmarinealbumcover.jpg/250px-TheBeatles-YellowSubmarinealbumcover.jpg",
+      "tracks": [
+        {
+          "id": 1,
+          "title": "Yellow Submarine",
+          "lyrics": "Lyrics can go here, but I'm lazy and I don't want to copy them.",
+          "videoQuery": "The Beatles Yellow Submarine",
+          "videoUrl": "https://www.youtube.com/watch?v=m2uTFF_3MaA"
+        },
+        {
+          "id": 2,
+          "title": "Only a Northern Song",
+          "lyrics": "Lyrics can go here, but I'm lazy and I don't want to copy them.",
+          "videoQuery": "The Beatles Only a Northern Song",
+          "videoUrl": "https://www.youtube.com/watch?v=vcvd-L73Cqs"
+        },
+        {
+          "id": 3,
+          "title": "All Together Now",
+          "lyrics": "Lyrics can go here, but I'm lazy and I don't want to copy them.",
+          "videoQuery": "The Beatles All Together Now",
+          "videoUrl": "https://www.youtube.com/watch?v=73lj5qJbrms"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "artistId": 1,
+      "artist": "The Beatles",
+      "title": "Abbey Road",
+      "description": "Abbey Road is the eleventh studio album by English rock band the Beatles, released on 26 September 1969 in the United Kingdom and on 1 October 1969 in the United States.",
+      "year": 1969,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/The_Beatles_Abbey_Road_album_cover.jpg/250px-The_Beatles_Abbey_Road_album_cover.jpg",
+      "tracks": [
+        {
+          "id": 1,
+          "title": "Come Together",
+          "lyrics": "Lyrics can go here, but I'm lazy and I don't want to copy them.",
+          "videoQuery": "The Beatles Come Together",
+          "videoUrl": "https://www.youtube.com/watch?v=45cYwDMibGo"
+        },
+        {
+          "id": 2,
+          "title": "Something",
+          "lyrics": "Lyrics can go here, but I'm lazy and I don't want to copy them.",
+          "videoQuery": "The Beatles Something",
+          "videoUrl": "https://www.youtube.com/watch?v=UelDrZ1aFeY"
+        },
+        {
+          "id": 3,
+          "title": "Here Comes the Sun",
+          "lyrics": "Lyrics can go here, but I'm lazy and I don't want to copy them.",
+          "videoQuery": "The Beatles Here Comes the Sun",
+          "videoUrl": "https://www.youtube.com/watch?v=KQetemT1sWc"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "artistId": 2,
+      "artist": "The Beatles",
+      "title": "Let It Be",
+      "description": "Let It Be is the twelfth and final studio album by the English rock band the Beatles. It was released on 8 May 1970, almost a month after the group's break-up.",
+      "year": 1970,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/The_Beatles_-_Let_It_Be.png/250px-The_Beatles_-_Let_It_Be.png",
+      "tracks": [
+        {
+          "id": 1,
+          "title": "Let It Be",
+          "lyrics": "Lyrics can go here, but I'm lazy and I don't want to copy them.",
+          "videoQuery": "The Beatles Let It Be",
+          "videoUrl": "https://www.youtube.com/watch?v=CGj85pVzRJs"
+        },
+        {
+          "id": 2,
+          "title": "Across the Universe",
+          "lyrics": "Lyrics can go here, but I'm lazy and I don't want to copy them.",
+          "videoQuery": "The Beatles Across the Universe",
+          "videoUrl": "https://www.youtube.com/watch?v=90M60PzmxEE"
+        },
+        {
+          "id": 3,
+          "title": "Get Back",
+          "lyrics": "Lyrics can go here, but I'm lazy and I don't want to copy them.",
+          "videoQuery": "The Beatles Get Back",
+          "videoUrl": "https://www.youtube.com/watch?v=IKJqecxswCA"
+        }
+      ]
+    },
+    {
+      "title": "Test Album",
+      "artist": "Test Artist",
+      "description": "Test Description",
+      "year": "2026",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Christian_cross.svg/60px-Christian_cross.svg.png",
+      "tracks": [],
+      "id": "IhCo3JBz9-I"
+    },
+    {
+      "id": "Lo2GBU5lqq0",
+      "title": "Test Album Edited",
+      "artist": "Test Artist Edited",
+      "description": "Test Description Edited",
+      "year": "2026",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Christian_cross.svg/60px-Christian_cross.svg.png",
+      "tracks": []
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
