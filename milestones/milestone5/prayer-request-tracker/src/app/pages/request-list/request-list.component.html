@@ -1,0 +1,71 @@
+<section class="page-shell list-shell">
+  <a class="cta-button" routerLink="/requests/new">+ Add New Request</a>
+
+  <div class="content-panel controls-panel">
+    <label class="search-control">
+      <span>Search:</span>
+      <input
+        type="text"
+        [ngModel]="searchTerm()"
+        (ngModelChange)="updateSearchTerm($event)"
+        placeholder="search title, description, or category"
+      />
+    </label>
+
+    <label class="filter-control">
+      <span>Filter:</span>
+      <select [ngModel]="selectedFilter()" (ngModelChange)="updateFilter($event)">
+        @for (option of filterOptions; track option.value) {
+          <option [value]="option.value">{{ option.label }}</option>
+        }
+      </select>
+    </label>
+  </div>
+
+  @if (errorMessage()) {
+    <p class="feedback error">{{ errorMessage() }}</p>
+  }
+
+  <div class="content-panel table-panel">
+    @if (loading()) {
+      <p class="feedback">Loading prayer requests...</p>
+    } @else if (filteredRequests().length === 0) {
+      <p class="feedback">No prayer requests match the current search and filter.</p>
+    } @else {
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Category</th>
+              <th>Date Submitted</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            @for (request of filteredRequests(); track request.id) {
+              <tr>
+                <td>{{ request.title }}</td>
+                <td>{{ request.category }}</td>
+                <td>{{ formatDate(request.dateSubmitted) }}</td>
+                <td>
+                  <span class="status-chip" [class.answered]="request.isAnswered">
+                    {{ statusLabel(request.isAnswered) }}
+                  </span>
+                </td>
+                <td class="actions-cell">
+                  <a [routerLink]="['/requests', request.id]">Details</a>
+                  <a [routerLink]="['/requests', request.id, 'edit']">Edit</a>
+                  <button class="link-button" type="button" (click)="confirmDelete(request)">
+                    Delete
+                  </button>
+                </td>
+              </tr>
+            }
+          </tbody>
+        </table>
+      </div>
+    }
+  </div>
+</section>

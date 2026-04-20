@@ -1,0 +1,44 @@
+<section class="page-shell">
+  <div class="section-banner">Prayer Request Details</div>
+
+  @if (errorMessage()) {
+    <p class="feedback error">{{ errorMessage() }}</p>
+  }
+
+  @if (loading()) {
+    <div class="content-panel details-panel">
+      <p class="feedback">Loading prayer request details...</p>
+    </div>
+  } @else if (request(); as request) {
+    <div class="content-panel details-panel">
+      <div class="detail-row">
+        <span class="detail-label">Title:</span>
+        <span>{{ request.title }}</span>
+      </div>
+      <div class="detail-row">
+        <span class="detail-label">Category:</span>
+        <span>{{ request.category }}</span>
+      </div>
+      <div class="detail-row">
+        <span class="detail-label">Date Submitted:</span>
+        <span>{{ formatDate(request.dateSubmitted) }}</span>
+      </div>
+      <div class="detail-row">
+        <span class="detail-label">Priority Level:</span>
+        <span>{{ priorityLabel(request.priorityLevel) }}</span>
+      </div>
+      <div class="detail-row">
+        <span class="detail-label">Status:</span>
+        <span>{{ statusLabel(request.isAnswered) }}</span>
+      </div>
+      <div class="detail-row detail-row-top">
+        <span class="detail-label">Description:</span>
+        <p class="detail-description">{{ request.description }}</p>
+      </div>
+    </div>
+
+    <div class="details-actions">
+      <a class="secondary-button" routerLink="/requests">Back</a>
+    </div>
+  }
+</section>
